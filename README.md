@@ -76,5 +76,5 @@ On the screenshot below three examples are shown. The period in green is when th
 <img src="./gui_plot_vert_2.PNG" width="500" height="300">
 
 ## Default behaviour
-Once you set the port settings and click "Open" the application will try to parse a number in arriving message and plot it. If messages don't contain a number or contain many numbers the plot will be empty with incremented X-axis at every received message. Just ignore it if you are not interested in plotting any variables.
+Once you set the port settings and click "Open" the application will try to parse a number in arriving message and plot it. If messages don't contain a number or contain many numbers the plot will be empty with incremented X-axis at every received message. Just ignore it if you are not interested in plotting any variables.  
 **NB!** settings in the visualization functionality don't affect the logging process! In case logging is enabled the messages are always logged <ins>as is</ins>
