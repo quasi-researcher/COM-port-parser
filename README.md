@@ -6,5 +6,5 @@ Here below I'll provide the details of how to use the utility. If you have any s
 
 ## COM port settings
 This part of UI allows to choose the appropriate settings. First of all select from the list the corresponding COM port your hardware device connected to. Then select appropriate baudrate, number of bits, options for parity and stop bits. Once ready click "Open". The default settings are 9600,8,N,1.
-![Screenshot](gui_1.PNG)
+![Screenshot](gui_1.PNG =250x250)
 
