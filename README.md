@@ -3,6 +3,7 @@
 
 Those who deal with hardware often need to read messages from devices connected to your PC over COM ports. This Windows desktop utility helps to read, log and visualize messages from a COM port.
 Here below I'll provide the details of how to use the utility. If you have any specific questions you can reach out to me in my blog https://research-based.blogspot.com/
+
 <img src="./gui_1.PNG" width="500" height="300">
 
 ## COM port settings
@@ -50,11 +51,12 @@ In case of correct splitting a text field will show the numbers of interst (mark
 
 It may happen that the hardware device sends every piece of information as new message. Let's modify the example.Now the messages from the connected device are like:
 
-**Time from start: XX**
+**Time from start: XX**  
+**Relative humidity: YY.Y**  
+**Temperature: ZZ.Z**  
 
-**Relative humidity: YY.Y**
-
-**Temperature: ZZ.Z**
+Now the received data is like:  
+<img src="./gui_data_vert.PNG" width="250" height="150">  
 
 Thus by using the splitting from the "horizontal" case the plot will always jump between three values XX, YY and ZZ and of course such visualization doesn't make any sense:
 
@@ -72,3 +74,7 @@ The last thing is how to switch between three variables in a cycle in the exampl
 On the screenshot below three examples are shown. The period in green is when the not appropriate "horizontal" option was set and the plot jumped between time, temperature and humidity. The period in purple is when the right option "vertical" was set and the utility took a variable as "first" by chance (temperature in this case). By using the control "Shift sequence start" in the next period (red) the elapsed time was plotted. And finally using again the same control in the last period (pink) the readings of humidity sensor was plotted:
 
 <img src="./gui_plot_vert_2.PNG" width="500" height="300">
+
+## Default behaviour
+Once you set the port settings and click "Open" the application will try to parse a number in arriving message and plot it. If messages don't contain a number or contain many numbers the plot will be empty with incremented X-axis at every received message. Just ignore it if you are not interested in plotting any variables.
+**NB!** settings in the visualization functionality don't affect the logging process! In case logging is enabled the messages are always logged <ins>as is</ins>
