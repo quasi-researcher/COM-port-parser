@@ -27,7 +27,7 @@ This is the basic functionality of the utility. You can set the connection, read
 
 To enable this functionality click the "Data snapshot" button in the Visualization panel. The utility will pick up a message from the port and display in in a text field. Click "Split" button and an new window will appear. 
 
-<img src="./gui_split.PNG" width="200" height="300">
+<img src="./gui_split.PNG" width="300" height="300">
 
 Here you can specify how to split the arriving messages into separate numbers. Type a symbol which is used as separator in the message and click "Split". If you want to use several symbols type them in a row without any additional stuff. E.g. if you want to specify two-spot and whitespace as two separators type ": ". You will see the splitted substrings in the table. Now let's consider two cases.
 
