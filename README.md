@@ -34,7 +34,9 @@ Here you can specify how to split the arriving messages into separate numbers. T
 ### "Horizontal" case
 
 Let's imagine a connected hardware device is sending messages with the readings of humidity and temperature sensors. Let it in a format be like:
+
 **RH: XX.X T:YY.Y**
+
 where XX.X and YY.Y are float values from the sensors
 Every new arriving message contains new readings from the sensors. We want to plot the readings. Then the separator symbols in the example are two-spot ":" and whitespace " ". And after splitting it's possible to choose the variable of interest by modifying the "Mask" row in the table. Imagine, we are interested in both humidity and temperature readings. Let's change the mask value from 0 to 1 in the corresponding cells and click "Apply":
 
@@ -47,9 +49,12 @@ In case of correct splitting a text field will show the numbers of interst (mark
 ### "Vertical" case
 
 It may happen that the hardware device sends every piece of information as new message. Let's modify the example.Now the messages from the connected device are like:
-**Time from start: XX
-Relative humidity: YY.Y
-Temperature: ZZ.Z**
+
+**Time from start: XX**
+
+**Relative humidity: YY.Y**
+
+**Temperature: ZZ.Z**
 
 Thus by using the splitting from the "horizontal" case the plot will always jump between three values XX, YY and ZZ and of course such visualization doesn't make any sense:
 
@@ -57,7 +62,7 @@ Thus by using the splitting from the "horizontal" case the plot will always jump
 
 Let's click again the "Split" button, set a separator (":" in this case), modify the mask and select "vertical" option. In the example the device sends three different values and it's one complete cycle. The fourth arrived message is in fact a begining of the next cycle. So, as a parameter "Variables in a cycle" the number "3" shall be specified:
 
-<img src="./gui_plot_vert.PNG" width="500" height="300">
+<img src="./gui_split_vert.PNG" width="500" height="300">
 
 Apply the settings and also set "Plot variable" parameter to "1" and click "Plot". The variable will be plotted:
 
