@@ -2,7 +2,7 @@
 ### utility to parse and log messages from COM port
 
 Those who deal with hardware often need to read messages from devices connected to your PC over COM ports. This Windows desktop utility helps to read, log and visualize messages from a COM port.
-Here below I'll provide the details of how to use the utility. If you have any specific questions you can reach out to me in my blog https://research-based.blogspot.com/
+Here below I'll provide the details of how to use the utility. If you have any specific questions you can reach out to me in my blog https://research-based.blogspot.com/2020/07/utility-to-parse-com-port-messages.html  
 
 <img src="./gui_1.PNG" width="500" height="300">
 
